@@ -1,8 +1,6 @@
 @import url('./root.css');
-
 /* //// Hero Section //// */
-
-.hero .container {
+#sec-hero .container {
 	height: 50rem;
 	display: flex;
 	justify-content: end;
@@ -23,3 +21,4 @@ h1 {
 h1 span {
 	font-weight: 700;
 }
+/* //// About Section //// */

@@ -1,17 +1,5 @@
 @import url('./root.css');
-/* //// Reset//// */
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-html {
-	font-size: 62.5%;
-	box-sizing: border-box;
-}
+@import url('./reset.css');
 /* //// General //// */
 body {
 	font-family: 'Inter', sans-serif;
@@ -83,7 +71,7 @@ nav a {
 	font-weight: 700;
 }
 /* //// Hero Section //// */
-.hero {
+#sec-hero {
 	height: 64.5rem;
 	background-image: url(../img/backgroundImg/hero-1.jpg);
 	background-position: center;
