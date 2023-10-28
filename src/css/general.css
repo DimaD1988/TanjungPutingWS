@@ -1,11 +1,5 @@
-:root {
-	--white: #ffffff;
-	--black: #000000;
-	--primary: #0e110c;
-	--sizeMax: 160rem;
-	--sizeL: 116rem;
-}
-
+@import url('./root.css');
+/* //// Reset//// */
 *,
 *::before,
 *::after {
@@ -18,7 +12,7 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
-
+/* //// General //// */
 body {
 	font-family: 'Inter', sans-serif;
 	background-color: var(--white);
@@ -41,9 +35,9 @@ section,
 }
 
 .container {
-	max-width: var(--sizeL);
+	width: var(--sizeL);
 }
-
+/* //// Navigation //// */
 nav,
 nav ul {
 	display: flex;
@@ -87,4 +81,12 @@ nav a {
 
 .language span {
 	font-weight: 700;
+}
+/* //// Hero Section //// */
+.hero {
+	height: 64.5rem;
+	background-image: url(../img/backgroundImg/hero-1.jpg);
+	background-position: center;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 0 100%);
+	box-shadow: inset -70rem -8rem 8rem 8rem var(--primaryShadow);
 }

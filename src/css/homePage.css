@@ -1,0 +1,25 @@
+@import url('./root.css');
+
+/* //// Hero Section //// */
+
+.hero .container {
+	height: 50rem;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+h1,
+h1 span {
+	font-size: 7.2rem;
+	color: var(--white);
+	letter-spacing: 0.2rem;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h1 span {
+	font-weight: 700;
+}
