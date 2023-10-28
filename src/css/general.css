@@ -1,3 +1,45 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--primary: #0e110c;
+	--sizeMax: 160rem;
+	--sizeL: 116rem;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
 body {
-	background-color: aqua;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--white);
+}
+
+header,
+footer {
+	background-color: var(--black);
+}
+
+section,
+.border,
+.container {
+	margin: 0 auto;
+}
+
+section,
+.border {
+	max-width: var(--sizeMax);
+}
+
+.container {
+	max-width: var(--sizeL);
 }
