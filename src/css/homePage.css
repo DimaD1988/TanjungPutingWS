@@ -1,5 +1,5 @@
 @import url('./root.css');
-/* @import url('./reset.css'); */
+@import url('./hp-galleryGrid.css');
 /* //// Hero Section //// */
 #sec-hero .container {
 	height: 50rem;
@@ -7,18 +7,15 @@
 	justify-content: end;
 	align-items: center;
 }
-
 h1,
 h1 span {
 	font-size: 7.2rem;
 	color: var(--white);
 	letter-spacing: 0.2rem;
 }
-
 h1 {
 	font-weight: 300;
 }
-
 h1 span {
 	font-weight: 700;
 }
@@ -75,4 +72,18 @@ h1 span {
 }
 #sec-benefits p {
 	font-size: 1.9rem;
+}
+/* //// Gallery Section //// */
+#sec-gallery .border {
+	display: grid;
+	grid-template: repeat(9, 5vw) / repeat(8, 1fr);
+	gap: 1.2rem;
+	padding: 1.2rem;
+	background-color: var(--primary);
+}
+#sec-gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }

@@ -78,3 +78,8 @@ nav a {
 	clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 0 100%);
 	box-shadow: inset -70rem -8rem 8rem 8rem var(--primaryShadow);
 }
+/* //// Footer //// */
+footer {
+	height: 20rem;
+	background-color: var(--primary);
+}
