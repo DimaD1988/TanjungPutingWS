@@ -22,3 +22,30 @@ h1 span {
 	font-weight: 700;
 }
 /* //// About Section //// */
+#sec-about {
+	padding-top: 22rem;
+	margin-top: -22rem;
+	height: 150rem;
+	clip-path: polygon(0% 18rem, 100% 0%, 100% 82%, 0 100%);
+	background-image: linear-gradient(
+		174deg,
+		var(--primary),
+		var(--primary) 33%,
+		transparent 34%
+	);
+}
+
+#sec-about .border {
+	display: flex;
+	justify-content: end;
+	height: 120rem;
+	clip-path: polygon(0% 9rem, 100% 0%, 100% 91%, 0 100%);
+	/* background-color: bisque; */
+}
+
+#sec-about img {
+	background-position: center;
+	clip-path: polygon(0% 9rem, 100% 0%, 100% 91%, 0 100%);
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+}
