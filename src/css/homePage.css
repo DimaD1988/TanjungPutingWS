@@ -1,4 +1,5 @@
 @import url('./root.css');
+/* @import url('./reset.css'); */
 /* //// Hero Section //// */
 #sec-hero .container {
 	height: 50rem;
@@ -34,18 +35,44 @@ h1 span {
 		transparent 34%
 	);
 }
-
+/* 
 #sec-about .border {
-	display: flex;
+  display: flex;
 	justify-content: end;
 	height: 120rem;
 	clip-path: polygon(0% 9rem, 100% 0%, 100% 91%, 0 100%);
-	/* background-color: bisque; */
 }
 
 #sec-about img {
-	background-position: center;
+  background-position: center;
 	clip-path: polygon(0% 9rem, 100% 0%, 100% 91%, 0 100%);
 	-webkit-filter: blur(8px);
 	filter: blur(8px);
+} 
+*/
+/* //// Benefits Section //// */
+#sec-benefits .text-block {
+	display: flex;
+	justify-content: space-between;
+}
+#sec-benefits h2,
+#sec-benefits h3 {
+	font-weight: 700;
+}
+#sec-benefits p {
+	font-weight: 400;
+}
+#sec-benefits h2,
+#sec-benefits h3,
+#sec-benefits p {
+	text-align: center;
+}
+#sec-benefits h2 {
+	font-size: 4.2rem;
+}
+#sec-benefits h3 {
+	font-size: 2.4rem;
+}
+#sec-benefits p {
+	font-size: 1.9rem;
 }
