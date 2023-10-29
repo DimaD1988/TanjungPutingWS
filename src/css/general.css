@@ -23,7 +23,7 @@ section,
 }
 
 .container {
-	width: var(--sizeL);
+	max-width: var(--sizeL);
 }
 /* //// Navigation //// */
 nav,
@@ -75,8 +75,6 @@ nav a {
 	height: 64.5rem;
 	background-image: url(../img/backgroundImg/hero-1.jpg);
 	background-position: center;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 0 100%);
-	box-shadow: inset -70rem -8rem 8rem 8rem var(--primaryShadow);
 }
 /* //// Footer //// */
 footer {
