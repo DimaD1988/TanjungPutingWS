@@ -116,6 +116,34 @@ h1 span,
 #sec-benefits p {
 	font-size: 1.9rem;
 }
+/* //// Tour Section //// */
+#sec-tour {
+	height: 92rem;
+	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-position: center;
+}
+#sec-tour .container {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	padding-top: 5rem;
+}
+#sec-tour h2,
+#sec-tour h2 span {
+	font-size: 3rem;
+}
+#sec-tour h2 {
+	font-weight: 300;
+	display: inline-block;
+	text-align: center;
+}
+#sec-tour h2 span {
+	font-weight: 700;
+}
+/* //// Pagination ////
+.pagination {
+} */
+
 /* //// Gallery Section //// */
 #sec-gallery .border {
 	display: grid;
