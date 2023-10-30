@@ -21,6 +21,9 @@ section,
 .container {
 	max-width: var(--sizeL);
 }
+a {
+	text-decoration: none;
+}
 /* //// Navigation //// */
 nav,
 nav ul {
@@ -45,9 +48,6 @@ nav a,
 .language span {
 	font-size: 3rem;
 	color: var(--white);
-}
-nav a {
-	text-decoration: none;
 }
 .language {
 	padding: 1rem 1.4rem;
