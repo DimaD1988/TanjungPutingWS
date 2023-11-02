@@ -14,26 +14,107 @@ h1 span {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 50rem;
-	background-color: aqua;
 }
 #sec-tourInfo h2 {
 	font-size: 4.5rem;
-	/* text-align: center; */
+	margin-bottom: 2rem;
 }
 /* //// Pagination //// */
-/* .pages { */
-/* max-width: 96rem; */
-/* } */
+.page-btn-box {
+	display: flex;
+	justify-content: space-between;
+	gap: 4rem;
+}
+.page-btn-box span {
+	font-size: 3rem;
+	font-weight: 400;
+	padding: 1rem;
+}
+#btn-prew,
+#btn-curr,
+#btn-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2.7rem;
+}
+#btn-prew,
+#btn-next {
+	border: solid 2px var(--black);
+}
+#btn-curr {
+	background-color: var(--primary);
+}
+#btn-curr span {
+	color: var(--white);
+}
 .btn-left,
 .btn-right {
-	top: 0rem;
+	bottom: -1rem;
 }
-.btn-prew,
-.btn-curr,
-.btn-next {
-	background-color: black;
-	width: 10rem;
-	height: 5rem;
-	margin: 2rem;
+.btn-left {
+	left: -9rem;
+}
+.btn-right {
+	right: -9rem;
+}
+.dots figure {
+	background-color: var(--primaryShadow);
+}
+/* //// DayBlock //// */
+.day-block {
+	max-width: 80rem;
+	margin-top: 9rem;
+}
+.day-block figure {
+	margin-bottom: 4rem;
+}
+.day-block h3,
+.day-block h4 {
+	letter-spacing: 2px;
+	margin-bottom: 1rem;
+}
+.day-block h3 {
+	font-size: 2.8rem;
+}
+.day-block h4 {
+	font-size: 2.4rem;
+	font-weight: 400;
+}
+.day-block li {
+	font-size: 2rem;
+	letter-spacing: 1px;
+	list-style-type: none;
+	position: relative;
+	margin-left: 2rem;
+	margin-bottom: 0.3rem;
+}
+.day-block li::before {
+	position: absolute;
+	top: 0.4rem;
+	left: -1.7rem;
+	content: '';
+	z-index: 5;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background-color: var(--primaryShadow);
+}
+/* //// Brink Button //// */
+.brink-btn {
+	display: grid;
+	place-content: center;
+	gap: 1.2rem;
+	width: 36rem;
+	height: 8rem;
+	border-radius: 2.7rem;
+	background-color: var(--primary);
+	margin-bottom: 2rem;
+}
+.brink-btn span {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 0;
+	color: var(--white);
+	margin: 0 auto;
 }

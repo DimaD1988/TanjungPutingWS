@@ -179,6 +179,15 @@ h1 span {
 .btn-right {
 	top: 50%;
 }
+.btn-left {
+	left: -6.4rem;
+}
+.btn-right {
+	right: -6.4rem;
+}
+.dots figure {
+	background-color: var(--white);
+}
 /* //// Gallery Section //// */
 #sec-gallery .border {
 	display: grid;
