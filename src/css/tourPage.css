@@ -1,0 +1,8 @@
+#sec-hero .container {
+	height: 50rem;
+}
+h1,
+h1 span {
+	font-size: 4.5rem;
+	letter-spacing: 0.2rem;
+}

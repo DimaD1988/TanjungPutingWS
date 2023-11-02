@@ -6,29 +6,12 @@
 	position: relative;
 }
 #sec-hero .container {
-	display: flex;
-	justify-content: end;
-	align-items: center;
 	height: 38rem;
-}
-h1,
-h1 span,
-#sec-hero h2,
-#sec-hero h2 span {
-	color: var(--white);
 }
 h1,
 h1 span {
 	font-size: 7.2rem;
 	letter-spacing: 0.2rem;
-}
-h1,
-#sec-hero h2 {
-	font-weight: 300;
-}
-h1 span,
-#sec-hero h2 span {
-	font-weight: 700;
 }
 #sec-hero h2 {
 	display: inline-block;
