@@ -202,12 +202,30 @@ h1 span,
 	top: 50%;
 	font-size: 7rem;
 	font-weight: 300;
+	z-index: 10;
+	color: var(--primary);
+}
+.btn-left::before,
+.btn-right::before {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: var(--white);
+	transform: translate(-50%, -50%);
+	z-index: -1;
 }
 .btn-left {
 	left: -4.8rem;
+	padding-right: 0.4rem;
 }
 .btn-right {
 	right: -4.8rem;
+	padding-left: 0.4rem;
 }
 .dots {
 	display: flex;
