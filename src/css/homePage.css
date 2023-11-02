@@ -6,10 +6,10 @@
 	position: relative;
 }
 #sec-hero .container {
-	height: 38rem;
 	display: flex;
 	justify-content: end;
 	align-items: center;
+	height: 38rem;
 }
 h1,
 h1 span,
@@ -31,21 +31,21 @@ h1 span,
 	font-weight: 700;
 }
 #sec-hero h2 {
-	position: absolute;
 	display: inline-block;
 	width: 55.3rem;
-	font-size: 3rem;
 	margin-top: 6rem;
+	font-size: 3rem;
 	letter-spacing: 2.7px;
+	position: absolute;
 	z-index: 10;
 }
 #sec-hero .black-line {
-	position: absolute;
-	right: 0;
-	bottom: -17.5rem;
 	display: block;
 	width: 160rem;
 	height: 40rem;
+	position: absolute;
+	right: 0;
+	bottom: -17.5rem;
 	background-image: linear-gradient(
 		174deg,
 		var(--primaryShadow),
@@ -142,23 +142,23 @@ h1 span,
 }
 /* //// Pagination //// */
 .pages {
-	position: relative;
-	margin: 2rem auto;
 	display: flex;
 	align-items: center;
 	max-width: 96rem;
+	margin: 2rem auto;
+	position: relative;
 }
 .page-text-box {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--white);
-	border: 2px var(--primaryShadow);
-	border-style: solid none solid solid;
 	max-width: 54rem;
 	max-height: 64rem;
 	padding-top: 3rem;
+	background-color: var(--white);
+	border: 2px var(--primaryShadow);
+	border-style: solid none solid solid;
+	position: relative;
 }
 .page-text-box span {
 	font-size: 4.6rem;
@@ -177,11 +177,11 @@ h1 span,
 	display: flex;
 	justify-content: center;
 	align-items: end;
-	background-color: darkkhaki;
 	height: 72rem;
-	border-radius: 4.2rem;
 	width: 36rem;
 	padding: 4.2rem;
+	background-color: darkkhaki;
+	border-radius: 4.2rem;
 }
 .page-img-box .btn {
 	display: flex;
@@ -198,24 +198,24 @@ h1 span,
 }
 .btn-left,
 .btn-right {
-	position: absolute;
-	top: 50%;
 	font-size: 7rem;
 	font-weight: 300;
-	z-index: 10;
 	color: var(--primary);
+	position: absolute;
+	top: 50%;
+	z-index: 10;
 }
 .btn-left::before,
 .btn-right::before {
-	content: '';
 	display: block;
-	border-radius: 50%;
 	width: 5rem;
 	height: 5rem;
+	border-radius: 50%;
+	background-color: var(--white);
+	content: '';
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	background-color: var(--white);
 	transform: translate(-50%, -50%);
 	z-index: -1;
 }
@@ -230,18 +230,18 @@ h1 span,
 .dots {
 	display: flex;
 	justify-content: space-between;
+	width: 20rem;
+	height: 5rem;
 	position: absolute;
 	left: calc(50% - 10rem);
 	bottom: -8rem;
-	width: 20rem;
-	height: 5rem;
 	z-index: 2;
 }
 .dots figure {
-	background-color: var(--white);
 	width: 2.4rem;
 	height: 2.4rem;
 	border-radius: 1.2rem;
+	background-color: var(--white);
 }
 #dot-3 {
 	background-color: var(--primary);
