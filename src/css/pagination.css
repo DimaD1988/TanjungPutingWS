@@ -1,0 +1,59 @@
+.pages {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.page-text-box,
+.page-btn-box {
+	display: flex;
+	position: relative;
+}
+.btn-left,
+.btn-right {
+	font-size: 7rem;
+	font-weight: 300;
+	color: var(--primary);
+	position: absolute;
+	z-index: 10;
+}
+.btn-left::before,
+.btn-right::before {
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background-color: var(--white);
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+.btn-left {
+	left: -6.4rem;
+	padding-right: 0.4rem;
+}
+.btn-right {
+	right: -6.4rem;
+	padding-left: 0.4rem;
+}
+.dots {
+	display: flex;
+	justify-content: space-between;
+	width: 20rem;
+	height: 5rem;
+	position: absolute;
+	left: calc(50% - 10rem);
+	bottom: -8rem;
+	z-index: 2;
+}
+.dots figure {
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 1.2rem;
+	background-color: var(--white);
+}
+#dot-3 {
+	background-color: var(--primary);
+}

@@ -1,5 +1,6 @@
 @import url('./root.css');
 @import url('./hp-galleryGrid.css');
+@import url('./pagination.css');
 /* //// Hero Section //// */
 #sec-hero,
 #sec-hero .hero {
@@ -125,14 +126,10 @@ h1 span {
 }
 /* //// Pagination //// */
 .pages {
-	display: flex;
-	align-items: center;
 	max-width: 96rem;
 	margin: 2rem auto;
-	position: relative;
 }
 .page-text-box {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	max-width: 54rem;
@@ -141,7 +138,6 @@ h1 span {
 	background-color: var(--white);
 	border: 2px var(--primaryShadow);
 	border-style: solid none solid solid;
-	position: relative;
 }
 .page-text-box span {
 	font-size: 4.6rem;
@@ -181,53 +177,7 @@ h1 span {
 }
 .btn-left,
 .btn-right {
-	font-size: 7rem;
-	font-weight: 300;
-	color: var(--primary);
-	position: absolute;
 	top: 50%;
-	z-index: 10;
-}
-.btn-left::before,
-.btn-right::before {
-	display: block;
-	width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-	background-color: var(--white);
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-}
-.btn-left {
-	left: -4.8rem;
-	padding-right: 0.4rem;
-}
-.btn-right {
-	right: -4.8rem;
-	padding-left: 0.4rem;
-}
-.dots {
-	display: flex;
-	justify-content: space-between;
-	width: 20rem;
-	height: 5rem;
-	position: absolute;
-	left: calc(50% - 10rem);
-	bottom: -8rem;
-	z-index: 2;
-}
-.dots figure {
-	width: 2.4rem;
-	height: 2.4rem;
-	border-radius: 1.2rem;
-	background-color: var(--white);
-}
-#dot-3 {
-	background-color: var(--primary);
 }
 /* //// Gallery Section //// */
 #sec-gallery .border {

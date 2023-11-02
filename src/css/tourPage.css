@@ -1,3 +1,6 @@
+@import url('./root.css');
+@import url('./pagination.css');
+/* //// Hero Section //// */
 #sec-hero .container {
 	height: 50rem;
 }
@@ -5,4 +8,32 @@ h1,
 h1 span {
 	font-size: 4.5rem;
 	letter-spacing: 0.2rem;
+}
+/* //// TourInfo Section //// */
+#sec-tourInfo .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 50rem;
+	background-color: aqua;
+}
+#sec-tourInfo h2 {
+	font-size: 4.5rem;
+	/* text-align: center; */
+}
+/* //// Pagination //// */
+/* .pages { */
+/* max-width: 96rem; */
+/* } */
+.btn-left,
+.btn-right {
+	top: 0rem;
+}
+.btn-prew,
+.btn-curr,
+.btn-next {
+	background-color: black;
+	width: 10rem;
+	height: 5rem;
+	margin: 2rem;
 }
