@@ -66,6 +66,30 @@ nav a,
 }
 /* //// Footer //// */
 footer {
-	height: 20rem;
 	background-color: var(--primary);
+}
+footer .container,
+footer h3 {
+	padding: 3rem 0;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+footer h3,
+footer a,
+footer span {
+	color: var(--white);
+	font-weight: 300;
+}
+footer h3 {
+	font-size: 3rem;
+}
+footer a,
+footer span {
+	font-size: 2.4rem;
+}
+footer img {
+	width: 20rem;
+	height: 20rem;
 }
