@@ -9,6 +9,18 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+/* //// less 640px //// */
+@media only screen and (width < 40em) {
+	html {
+		font-size: 50%;
+	}
+}
 
 /* html,
 body {
