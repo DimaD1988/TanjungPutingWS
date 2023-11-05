@@ -176,3 +176,32 @@ h1 span {
 	width: 80%;
 	margin: 0 auto 2rem;
 }
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	#sec-hero {
+		height: 51.5rem;
+		background-position: bottom;
+	}
+	#sec-hero .container {
+		padding-top: 8rem;
+		align-items: start;
+	}
+
+	h1,
+	h1 span {
+		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
+	}
+	#sec-tourInfo {
+		margin: -4rem auto 4rem;
+	}
+	.btn-left,
+	.btn-right {
+		bottom: -8rem;
+	}
+	.btn-left {
+		left: 1rem;
+	}
+	.btn-right {
+		right: 1rem;
+	}
+}
