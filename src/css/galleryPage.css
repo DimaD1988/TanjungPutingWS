@@ -36,3 +36,18 @@ h1 span {
 	background-color: var(--white);
 	clip-path: polygon(0 18rem, 160rem 0, 160rem 18rem, 0 36rem);
 }
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	#sec-hero {
+		height: 51.5rem;
+		background-position: bottom;
+	}
+	#sec-hero .container {
+		padding-top: 8rem;
+		align-items: start;
+	}
+	h1,
+	h1 span {
+		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
+	}
+}
