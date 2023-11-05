@@ -220,8 +220,7 @@ h1 span {
 	#sec-hero h2 {
 		width: clamp(30rem, 44.4vw, 55.3rem);
 		font-size: clamp(2rem, 2.4vw, 3rem);
-} 
-	} 
+	}
 	#sec-about {
 		margin-top: 12rem;
 	}
@@ -256,7 +255,81 @@ h1 span {
 		color: var(--white);
 	}
 }
-/* //// less 960px //// */
-/* @media only screen and (width < 60em) {
-
-}  */
+/* //// less 640px //// */
+@media only screen and (width < 40em) {
+	#sec-hero {
+		height: 48rem;
+	}
+	h1 {
+		padding-bottom: 8rem;
+	}
+	#sec-hero h2,
+	#sec-hero h2 span {
+		letter-spacing: clamp(0.2px, 0.5vw, 2.7px);
+		margin-top: -4rem;
+	}
+	#sec-hero .black-line {
+		bottom: -30rem;
+		clip-path: polygon(0 18rem, 160rem 0, 160rem 12rem, 0 30rem);
+	}
+	#sec-about .container {
+		height: auto;
+	}
+	#sec-about .text-box {
+		max-width: auto;
+	}
+	#sec-about p {
+		margin: 1rem 0rem;
+		letter-spacing: clamp(0px, 0.3vw, 2px);
+		text-align: justify;
+	}
+	#sec-benefits h2 {
+		font-size: clamp(3rem, 5.5vw, 4.2rem);
+	}
+	#sec-benefits .text-block {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2.4rem;
+	}
+	#sec-tour {
+		height: auto;
+	}
+	#sec-tour .container {
+		padding-top: 1rem;
+	}
+	.pages {
+		margin: 1.2rem 0;
+	}
+	.page-text-box {
+		padding-top: 1rem;
+	}
+	.page-text-box span {
+		font-size: clamp(3.6rem, 6vw, 4.6rem);
+	}
+	.page-text-box ul {
+		padding: 1rem 1rem 2rem 3.4rem;
+	}
+	.page-text-box li {
+		font-size: 2.2rem;
+		text-align: justify;
+		letter-spacing: 0.5px;
+	}
+	.btn-left,
+	.btn-right {
+		top: 100%;
+	}
+	.btn-left {
+		left: 10%;
+	}
+	.btn-right {
+		right: 10%;
+	}
+	.dots {
+		bottom: -12rem;
+	}
+	.btnAlt {
+		margin: 10rem auto 2rem auto;
+	}
+	#sec-gallery {
+		display: none;
+	}
+}
