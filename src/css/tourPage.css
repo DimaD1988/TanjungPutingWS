@@ -252,6 +252,10 @@ h1 span {
 }
 /* //// less 560px //// */
 @media only screen and (width < 35em) {
+	sec-tourInfo .container,
+	#sec-note .container {
+		padding: 0 1rem;
+	}
 	#btn-prew,
 	#btn-next {
 		display: none;
@@ -269,11 +273,15 @@ h1 span {
 	.day-block h4 {
 		letter-spacing: 1px;
 	}
-	.day-block li {
+	#sec-note li {
 		font-size: 2rem;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
+		max-width: 90vw;
 	}
 	#note ul {
 		max-width: 42rem;
+	}
+	#includes h3 {
+		font-size: 2.7rem;
 	}
 }
