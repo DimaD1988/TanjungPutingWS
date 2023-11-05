@@ -243,9 +243,37 @@ h1 span {
 		align-items: center;
 	}
 	#note ul {
-		width: clamp(30rem, 80vw, 80%);
+		width: clamp(42rem, 80vw, 80%);
 	}
 	#includes ul {
+		max-width: 42rem;
+		margin-bottom: 3rem;
+	}
+}
+/* //// less 560px //// */
+@media only screen and (width < 35em) {
+	#btn-prew,
+	#btn-next {
+		display: none;
+	}
+	.btn-left,
+	.btn-right {
+		bottom: -1.7rem;
+	}
+	.btn-left {
+		left: -5.2rem;
+	}
+	.btn-right {
+		right: -5.2rem;
+	}
+	.day-block h4 {
+		letter-spacing: 1px;
+	}
+	.day-block li {
+		font-size: 2rem;
+		letter-spacing: 1px;
+	}
+	#note ul {
 		max-width: 42rem;
 	}
 }
