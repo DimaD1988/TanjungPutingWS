@@ -50,7 +50,7 @@ h1 span {
 	height: 94rem;
 }
 #sec-about .text-box {
-	width: 56rem;
+	max-width: 56rem;
 }
 #sec-about p {
 	margin-top: 1.5rem;
@@ -62,7 +62,7 @@ h1 span {
 #sec-about img {
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 50%;
 	-webkit-filter: blur(2px);
 	filter: blur(2px);
 	background-position: center;
@@ -71,9 +71,14 @@ h1 span {
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5rem), 0 100%);
 }
 /* //// Benefits Section //// */
-#sec-benefits .text-block {
+#sec-benefits .container {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+#sec-benefits .text-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	margin-bottom: 4.6rem;
 }
 #sec-benefits h2,
@@ -83,7 +88,6 @@ h1 span {
 #sec-benefits p {
 	font-weight: 400;
 }
-#sec-benefits h2,
 #sec-benefits h3,
 #sec-benefits p {
 	text-align: center;
@@ -162,7 +166,8 @@ h1 span {
 	background-color: darkkhaki;
 	border-radius: 4.2rem;
 }
-.page-img-box .btn {
+.page-img-box .btn,
+.btnAlt {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -171,7 +176,11 @@ h1 span {
 	border: solid 2px var(--primaryShadow);
 	border-radius: 4.2rem;
 }
-.page-img-box a {
+.btnAlt {
+	display: none;
+}
+.page-img-box a,
+.btnAlt a {
 	font-size: 2.4rem;
 	color: var(--primary);
 }
@@ -201,4 +210,40 @@ h1 span {
 	height: 100%;
 	object-fit: cover;
 	display: block;
+}
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	#sec-about {
+		margin-top: 12rem;
+	}
+	#sec-about .container {
+		margin-top: 1rem;
+		justify-content: center;
+		height: auto;
+	}
+	#sec-about img {
+		display: none;
+	}
+	#sec-benefits .text-block {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+	}
+	#sec-benefits .text-box {
+		max-width: 40rem;
+	}
+	.page-text-box {
+		border-style: solid solid solid solid;
+	}
+	.page-img-box {
+		display: none;
+	}
+	.btnAlt {
+		display: flex;
+		max-width: 27rem;
+		margin-top: 6rem;
+		background-color: var(--primary);
+	}
+	.btnAlt a {
+		color: var(--white);
+	}
 }
