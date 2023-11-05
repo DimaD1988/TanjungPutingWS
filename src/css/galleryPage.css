@@ -51,3 +51,34 @@ h1 span {
 		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
 	}
 }
+/* //// less 960px //// */
+@media only screen and (width < 60em) {
+	#sec-hero {
+		height: 40rem;
+	}
+	#sec-hero .container {
+		padding-top: 6rem;
+		align-items: start;
+	}
+	h1,
+	h1 span {
+		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
+	}
+	#gallery .white-line {
+		height: 30rem;
+		top: -12rem;
+		clip-path: polygon(0 18rem, 160rem 0, 160rem 12rem, 0 30rem);
+	}
+	#gallery h2 {
+		padding-top: 10rem;
+	}
+	.carousel-btns {
+		gap: 5rem;
+	}
+	.carousel-btns figure {
+		width: 27rem;
+	}
+	.carousel-btns span {
+		font-size: 2.4rem;
+	}
+}
