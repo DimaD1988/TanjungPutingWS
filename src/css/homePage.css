@@ -213,6 +213,15 @@ h1 span {
 }
 /* //// less 1200px //// */
 @media only screen and (width < 75em) {
+	h1,
+	h1 span {
+		font-size: clamp(4rem, 5.5vw, 7.2rem);
+	}
+	#sec-hero h2 {
+		width: clamp(30rem, 44.4vw, 55.3rem);
+		font-size: clamp(2rem, 2.4vw, 3rem);
+} 
+	} 
 	#sec-about {
 		margin-top: 12rem;
 	}
@@ -247,3 +256,7 @@ h1 span {
 		color: var(--white);
 	}
 }
+/* //// less 960px //// */
+/* @media only screen and (width < 60em) {
+
+}  */
