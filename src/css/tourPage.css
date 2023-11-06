@@ -1,0 +1,288 @@
+@import url('./root.css');
+@import url('./pagination.css');
+/* //// Hero Section //// */
+#sec-hero .container {
+	height: 50rem;
+}
+h1,
+h1 span {
+	font-size: 4.5rem;
+	letter-spacing: 0.2rem;
+}
+/* //// TourInfo Section //// */
+#sec-tourInfo .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#sec-tourInfo h2 {
+	font-size: 4.5rem;
+	margin-bottom: 2rem;
+}
+/* //// Pagination //// */
+.page-btn-box {
+	display: flex;
+	justify-content: space-between;
+	gap: 4rem;
+}
+.page-btn-box span {
+	font-size: 3rem;
+	font-weight: 400;
+	padding: 1rem;
+}
+#btn-prev,
+#btn-cur,
+#btn-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2.7rem;
+}
+#btn-prev,
+#btn-next {
+	border: solid 2px var(--black);
+}
+#btn-cur {
+	background-color: var(--primary);
+}
+#btn-cur span {
+	color: var(--white);
+}
+.btn-left,
+.btn-right {
+	bottom: 0.5rem;
+}
+.btn-left {
+	left: -9rem;
+}
+.btn-right {
+	right: -9rem;
+}
+.dots figure {
+	background-color: var(--primaryShadow);
+}
+/* //// DayBlock //// */
+.day-block {
+	max-width: 80rem;
+	margin-top: 9rem;
+}
+.day-block figure {
+	margin-bottom: 4rem;
+}
+.day-block h3,
+.day-block h4 {
+	letter-spacing: 2px;
+	margin-bottom: 1rem;
+}
+.day-block h3 {
+	font-size: 2.8rem;
+}
+.day-block h4 {
+	font-size: 2.4rem;
+	font-weight: 400;
+}
+.day-block li {
+	font-size: 2rem;
+	letter-spacing: 1px;
+	list-style-type: none;
+	position: relative;
+	margin-left: 2rem;
+	margin-bottom: 0.3rem;
+}
+.day-block li::before {
+	position: absolute;
+	top: 0.4rem;
+	left: -1.7rem;
+	content: '';
+	z-index: 5;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background-color: var(--primaryShadow);
+}
+/* //// Brink Button //// */
+.brink-btn {
+	display: grid;
+	place-content: center;
+	gap: 3rem;
+	width: 36rem;
+	height: 8rem;
+	border-radius: 2.7rem;
+	background-color: var(--primary);
+	margin-bottom: 2rem;
+}
+.brink-btn span {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 0;
+	color: var(--white);
+	margin: 0 auto;
+}
+/* //// Note Section //// */
+#sec-note {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-position: bottom;
+	margin-top: 2rem;
+}
+#sec-note h2,
+#sec-note h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#sec-note h2 {
+	font-size: 4.5rem;
+}
+#sec-note h3 {
+	font-size: 3rem;
+	text-align: center;
+}
+#sec-note figure {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+#note ul {
+	width: 48%;
+}
+#includes ul {
+	max-width: 50rem;
+}
+#sec-note li {
+	font-size: 2.4rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	list-style-type: none;
+	position: relative;
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+#sec-note li::before {
+	position: absolute;
+	top: 0.8rem;
+	left: -1.7rem;
+	content: '';
+	z-index: 5;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background-color: var(--primaryShadow);
+}
+#sec-note hr {
+	border-top: 3px solid var(--primaryShadow);
+	border-radius: 2px;
+	width: 80%;
+	margin: 0 auto 2rem;
+}
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	#sec-hero {
+		height: 51.5rem;
+		background-position: bottom;
+	}
+	#sec-hero .container {
+		padding-top: 8rem;
+		align-items: start;
+	}
+	h1,
+	h1 span {
+		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
+	}
+	#sec-tourInfo {
+		margin: -4rem auto 4rem;
+	}
+	.btn-left,
+	.btn-right {
+		bottom: -8rem;
+	}
+	.btn-left {
+		left: 1rem;
+	}
+	.btn-right {
+		right: 1rem;
+	}
+}
+/* //// less 960px //// */
+@media only screen and (width < 60em) {
+	#sec-hero {
+		height: 40rem;
+	}
+	#sec-tourInfo {
+		margin: -6rem auto 3rem;
+	}
+	#sec-tourInfo h2 {
+		font-size: clamp(3.6rem, 4.6vw, 4.5rem);
+	}
+	.page-btn-box {
+		gap: clamp(2.4rem, 3.1vw, 4rem);
+	}
+	.page-btn-box span {
+		font-size: clamp(2.4rem, 3.1vw, 3rem);
+	}
+	.brink-btn {
+		width: clamp(24rem, 29vw, 30rem);
+		height: clamp(5rem, 7.6vw, 8rem);
+		gap: clamp(2rem, 3.5vw, 3rem);
+	}
+	.brink-btn span {
+		font-size: clamp(2rem, 3vw, 3rem);
+	}
+}
+/* //// less 720px //// */
+@media only screen and (width < 45em) {
+	#sec-note {
+		background-image: none;
+	}
+	#sec-note h2 {
+		font-size: clamp(3.6rem, 6vw, 4.5rem);
+	}
+	#note,
+	#includes {
+		flex-direction: column;
+		align-items: center;
+	}
+	#note ul {
+		width: clamp(42rem, 80vw, 80%);
+	}
+	#includes ul {
+		max-width: 42rem;
+		margin-bottom: 3rem;
+	}
+}
+/* //// less 560px //// */
+@media only screen and (width < 35em) {
+	sec-tourInfo .container,
+	#sec-note .container {
+		padding: 0 1rem;
+	}
+	#btn-prev,
+	#btn-next {
+		display: none;
+	}
+	.btn-left,
+	.btn-right {
+		bottom: -0.5rem;
+	}
+	.btn-left {
+		left: -5.2rem;
+	}
+	.btn-right {
+		right: -5.2rem;
+	}
+	.day-block h4 {
+		letter-spacing: 1px;
+	}
+	#sec-note li {
+		font-size: 2rem;
+		letter-spacing: 0.5px;
+		max-width: 90vw;
+	}
+	#note ul {
+		max-width: 42rem;
+	}
+	#includes h3 {
+		font-size: 2.7rem;
+	}
+}

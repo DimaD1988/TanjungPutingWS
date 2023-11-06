@@ -1,0 +1,342 @@
+@import url('./root.css');
+@import url('./hp-galleryGrid.css');
+@import url('./pagination.css');
+/* //// Hero Section //// */
+#sec-hero,
+#sec-hero .hero {
+	position: relative;
+}
+#sec-hero .container {
+	height: 38rem;
+}
+h1,
+h1 span {
+	font-size: 7.2rem;
+	letter-spacing: 0.2rem;
+}
+#sec-hero h2 {
+	display: inline-block;
+	width: 55.3rem;
+	margin-top: 6rem;
+	font-size: 3rem;
+	letter-spacing: 2.7px;
+	position: absolute;
+	z-index: 10;
+}
+#sec-hero .black-line {
+	display: block;
+	width: 160rem;
+	height: 40rem;
+	position: absolute;
+	right: 0;
+	bottom: -17.5rem;
+	background-image: linear-gradient(
+		174deg,
+		var(--primaryShadow),
+		var(--primary) 33%,
+		var(--primary)
+	);
+	z-index: 5;
+	clip-path: polygon(0 18rem, 160rem 0, 160rem 22rem, 0 40rem);
+}
+/* //// About Section //// */
+#sec-about {
+	position: relative;
+	margin-top: -1rem;
+}
+#sec-about .container {
+	display: flex;
+	align-items: center;
+	height: 94rem;
+}
+#sec-about .text-box {
+	max-width: 56rem;
+}
+#sec-about p {
+	margin-top: 1.5rem;
+	font-size: 2.4rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 1.3;
+}
+#sec-about img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5rem), 0 100%);
+}
+/* //// Benefits Section //// */
+#sec-benefits .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#sec-benefits .text-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: 4.6rem;
+}
+#sec-benefits h2,
+#sec-benefits h3 {
+	font-weight: 700;
+}
+#sec-benefits p {
+	font-weight: 400;
+}
+#sec-benefits h3,
+#sec-benefits p {
+	text-align: center;
+}
+#sec-benefits h2 {
+	margin-top: 4.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 4.2rem;
+}
+#sec-benefits h3 {
+	margin-bottom: 1.5rem;
+	font-size: 2.4rem;
+}
+#sec-benefits p {
+	font-size: 1.9rem;
+}
+/* //// Tour Section //// */
+#sec-tour {
+	height: 92rem;
+	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-position: center;
+}
+#sec-tour .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+}
+#sec-tour h2,
+#sec-tour h2 span {
+	font-size: 3rem;
+}
+#sec-tour h2 {
+	font-weight: 300;
+	display: inline-block;
+	text-align: center;
+}
+#sec-tour h2 span {
+	font-weight: 700;
+}
+/* //// Pagination //// */
+.pages {
+	max-width: 96rem;
+	margin: 2rem auto;
+}
+.page-text-box {
+	flex-direction: column;
+	align-items: center;
+	max-width: 54rem;
+	max-height: 64rem;
+	padding-top: 3rem;
+	background-color: var(--white);
+	border: 2px var(--primaryShadow);
+	border-style: solid none solid solid;
+}
+.page-text-box span {
+	font-size: 4.6rem;
+	font-weight: 700;
+}
+.page-text-box ul {
+	padding: 3rem 0 5rem 3.6rem;
+	overflow-y: hidden;
+}
+.page-text-box li {
+	font-size: 2.4rem;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+}
+.page-img-box {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	height: 72rem;
+	width: 36rem;
+	padding: 4.2rem;
+	background-color: darkkhaki;
+	border-radius: 4.2rem;
+}
+.page-img-box .btn,
+.btnAlt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 6.4rem;
+	border: solid 2px var(--primaryShadow);
+	border-radius: 4.2rem;
+}
+.btnAlt {
+	display: none;
+}
+.page-img-box a,
+.btnAlt a {
+	font-size: 2.4rem;
+	color: var(--primary);
+}
+.btn-left,
+.btn-right {
+	top: 50%;
+}
+.btn-left {
+	left: -6.4rem;
+}
+.btn-right {
+	right: -6.4rem;
+}
+.dots figure {
+	background-color: var(--white);
+}
+/* //// Gallery Section //// */
+#sec-gallery .border {
+	display: grid;
+	grid-template: repeat(9, 5vw) / repeat(8, 1fr);
+	gap: 1.2rem;
+	padding: 1.2rem;
+	background-color: var(--primary);
+}
+#sec-gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	h1,
+	h1 span {
+		font-size: clamp(4rem, 5.5vw, 7.2rem);
+	}
+	#sec-hero h2 {
+		width: clamp(30rem, 44.4vw, 55.3rem);
+		font-size: clamp(2rem, 2.4vw, 3rem);
+	}
+	#sec-about {
+		margin-top: 12rem;
+	}
+	#sec-about .container {
+		margin-top: 1rem;
+		justify-content: center;
+		height: auto;
+	}
+	#sec-about img {
+		display: none;
+	}
+	#sec-benefits .text-block {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+	}
+	#sec-benefits .text-box {
+		max-width: 40rem;
+	}
+	.page-text-box {
+		border-style: solid solid solid solid;
+	}
+	.page-img-box {
+		display: none;
+	}
+	.btnAlt {
+		display: flex;
+		max-width: 27rem;
+		margin-top: 6rem;
+		background-color: var(--primary);
+	}
+	.btnAlt a {
+		color: var(--white);
+	}
+}
+/* //// less 640px //// */
+@media only screen and (width < 40em) {
+	#sec-hero {
+		height: 48rem;
+	}
+	h1 {
+		padding-bottom: 8rem;
+	}
+	#sec-hero h2,
+	#sec-hero h2 span {
+		letter-spacing: clamp(0.2px, 0.5vw, 2.7px);
+		margin-top: -4rem;
+	}
+	#sec-hero .black-line {
+		bottom: -30rem;
+		clip-path: polygon(0 18rem, 160rem 0, 160rem 12rem, 0 30rem);
+	}
+	#sec-about .container {
+		height: auto;
+	}
+	#sec-about .text-box {
+		max-width: auto;
+	}
+	#sec-about p {
+		margin: 1rem 0rem;
+		letter-spacing: clamp(0px, 0.3vw, 2px);
+		text-align: justify;
+	}
+	#sec-benefits h2 {
+		font-size: clamp(3rem, 5.5vw, 4.2rem);
+	}
+	#sec-benefits .text-block {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2.4rem;
+	}
+	#sec-tour {
+		height: auto;
+	}
+	#sec-tour .container {
+		padding-top: 1rem;
+	}
+	.pages {
+		margin: 1.2rem 0;
+	}
+	.page-text-box {
+		padding-top: 1rem;
+	}
+	.page-text-box span {
+		font-size: clamp(3.6rem, 6vw, 4.6rem);
+	}
+	.page-text-box ul {
+		padding: 1rem 1rem 2rem 3.4rem;
+	}
+	.page-text-box li {
+		font-size: 2.2rem;
+		text-align: justify;
+		letter-spacing: 0.5px;
+	}
+	.btn-left,
+	.btn-right {
+		top: 112%;
+	}
+	.btn-left {
+		left: 10%;
+	}
+	.btn-right {
+		right: 10%;
+	}
+	.dots {
+		bottom: -12rem;
+	}
+	.btnAlt {
+		margin: 10rem auto 2rem auto;
+	}
+	#sec-gallery {
+		display: none;
+	}
+}
+/* //// less 480px //// */
+@media only screen and (width < 30em) {
+	.btn-left,
+	.btn-right {
+		top: 104%;
+	}
+}

@@ -1,0 +1,161 @@
+@import url('./root.css');
+@import url('./reset.css');
+/* //// General //// */
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--white);
+}
+header,
+footer {
+	background-color: var(--black);
+}
+section,
+.border,
+.container {
+	margin: 0 auto;
+}
+section,
+.border {
+	max-width: var(--sizeMax);
+}
+.container {
+	max-width: var(--sizeL);
+}
+a {
+	text-decoration: none;
+}
+/* //// Navigation //// */
+nav,
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav {
+	height: 12rem;
+}
+nav img {
+	height: 10rem;
+}
+nav ul {
+	width: 70rem;
+	justify-content: space-between;
+	margin-left: auto;
+}
+nav li {
+	list-style-type: none;
+}
+nav a,
+.language span,
+.menu span {
+	font-size: 3rem;
+	color: var(--white);
+}
+.language,
+.menu {
+	padding: 1rem 1.4rem;
+	border: solid 2px var(--white);
+	border-radius: 16px;
+	margin-left: 8rem;
+}
+.language span {
+	font-weight: 700;
+}
+.menu {
+	display: none;
+}
+/* //// Hero Section //// */
+#sec-hero {
+	height: 64.5rem;
+	background-image: url(../img/backgroundImg/hero-1.jpg);
+	background-position: center;
+}
+#sec-hero .container {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+h1,
+h1 span,
+#sec-hero h2,
+#sec-hero h2 span {
+	color: var(--white);
+}
+
+h1,
+#sec-hero h2 {
+	font-weight: 300;
+}
+h1 span,
+#sec-hero h2 span {
+	font-weight: 700;
+}
+/* //// Footer //// */
+footer {
+	background-color: var(--primary);
+}
+footer .contactsMobile {
+	display: none;
+}
+footer .container,
+footer h3 {
+	padding: 3rem 0;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+footer h3,
+footer a,
+footer span {
+	color: var(--white);
+	font-weight: 300;
+}
+footer h3 {
+	font-size: 3rem;
+}
+footer a,
+footer span {
+	font-size: 2.4rem;
+}
+footer img {
+	width: 20rem;
+	height: 20rem;
+}
+/* //// less 1200px //// */
+@media only screen and (width < 75em) {
+	.container {
+		padding: 0 3rem;
+	}
+	.language,
+	.nav-list,
+	footer img {
+		display: none;
+	}
+	.menu {
+		display: block;
+		margin-left: auto;
+	}
+	footer .container {
+		justify-content: space-around;
+	}
+}
+/* //// less 640px //// */
+@media only screen and (width < 40em) {
+	#sec-hero .container {
+		justify-content: center;
+	}
+	h1,
+	h1 span {
+		font-size: clamp(3.2rem, 5.5vw, 4rem);
+	}
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer figure {
+		display: none;
+	}
+	footer .contactsMobile {
+		display: block;
+	}
+}
