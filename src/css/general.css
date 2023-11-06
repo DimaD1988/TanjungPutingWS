@@ -34,6 +34,7 @@ nav {
 	height: 12rem;
 }
 nav img {
+	width: 10rem;
 	height: 10rem;
 }
 nav ul {
@@ -66,7 +67,7 @@ nav a,
 /* //// Hero Section //// */
 #sec-hero {
 	height: 64.5rem;
-	background-image: url(../img/backgroundImg/hero-1.jpg);
+	background-image: url(../img/backgroundImg/hero-1.webp);
 	background-position: center;
 }
 #sec-hero .container {

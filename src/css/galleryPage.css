@@ -11,7 +11,7 @@ h1 span {
 }
 /* //// Gallery Section //// */
 #gallery {
-	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-image: url(../img/backgroundImg/bgd-1.webp);
 	background-position: bottom;
 	position: relative;
 }
