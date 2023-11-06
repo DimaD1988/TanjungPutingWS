@@ -82,3 +82,23 @@ h1 span {
 		font-size: 2.4rem;
 	}
 }
+/* //// less 640px //// */
+@media only screen and (width < 60em) {
+	#gallery h2 {
+		font-size: clamp(3.6rem, 6.6vw, 4.5rem);
+		padding-top: clamp(5rem, 10vw, 10rem);
+	}
+	.carousel-btns {
+		gap: clamp(3rem, 7vw, 5rem);
+	}
+	.carousel-btns figure {
+		width: clamp(18rem, 40vw, 27rem);
+	}
+	.carousel-btns span {
+		font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+	}
+	#firstPic,
+	#lastPic {
+		display: none;
+	}
+}
