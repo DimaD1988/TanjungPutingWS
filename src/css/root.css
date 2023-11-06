@@ -1,0 +1,8 @@
+:root {
+	--white: rgb(255, 255, 255);
+	--black: rgb(0, 0, 0);
+	--primary: rgb(14, 17, 12);
+	--primaryShadow: rgba(14, 17, 12, 0.25);
+	--sizeMax: 160rem;
+	--sizeL: 116rem;
+}

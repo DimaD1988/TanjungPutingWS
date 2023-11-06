@@ -1,0 +1,33 @@
+/* //// Carousel //// */
+.carousel,
+.carousel-btns {
+	margin-bottom: 5rem;
+}
+.carousel {
+	width: 100%;
+	height: 58rem;
+	background-color: aqua;
+}
+/* //// Carousel Buttons//// */
+.carousel-btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 6rem;
+}
+.carousel-btns figure {
+	display: grid;
+	place-content: center;
+	width: 36rem;
+	height: 6rem;
+	background-color: var(--primary);
+	border-radius: 2.7rem;
+}
+.carousel-btns span {
+	font-size: 3rem;
+	font-weight: 400;
+	color: var(--white);
+}
+.carousel-btns img {
+	height: 5rem;
+}
