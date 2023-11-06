@@ -10,31 +10,9 @@
 }
 .btn-left,
 .btn-right {
-	font-size: 7rem;
-	font-weight: 300;
-	color: var(--primary);
+	height: 5rem;
 	position: absolute;
 	z-index: 10;
-}
-.btn-left::before,
-.btn-right::before {
-	display: block;
-	width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-	background-color: var(--white);
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-}
-.btn-left {
-	padding-right: 0.4rem;
-}
-.btn-right {
-	padding-left: 0.4rem;
 }
 .dots {
 	display: flex;

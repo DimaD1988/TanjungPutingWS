@@ -315,7 +315,7 @@ h1 span {
 	}
 	.btn-left,
 	.btn-right {
-		top: 100%;
+		top: 112%;
 	}
 	.btn-left {
 		left: 10%;
@@ -331,5 +331,12 @@ h1 span {
 	}
 	#sec-gallery {
 		display: none;
+	}
+}
+/* //// less 480px //// */
+@media only screen and (width < 30em) {
+	.btn-left,
+	.btn-right {
+		top: 104%;
 	}
 }

@@ -28,30 +28,6 @@
 	font-weight: 400;
 	color: var(--white);
 }
-.carousel-btns div,
-.carousel-btns div::before {
-	font-size: 6rem;
-	color: var(--black);
-}
-#firstPic,
-#lastPic {
-	position: relative;
-}
-#firstPic::before,
-#lastPic::before {
-	display: block;
-	position: absolute;
-	top: 51.5%;
-	left: 3.3rem;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-}
-#firstPic::before {
-	content: '<';
-}
-#lastPic::before {
-	content: '>';
-}
-#prewPic {
-	padding-left: 1.2rem;
+.carousel-btns img {
+	height: 5rem;
 }
