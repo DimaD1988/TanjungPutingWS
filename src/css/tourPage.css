@@ -123,7 +123,7 @@ h1 span {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-image: url(../img/backgroundImg/bgd-1.webp);
 	background-position: bottom;
 	margin-top: 2rem;
 }
