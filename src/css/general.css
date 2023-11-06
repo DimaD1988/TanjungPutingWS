@@ -34,7 +34,7 @@ nav {
 	height: 12rem;
 }
 nav img {
-	width: calc(10rem * (901 / 871));
+	width: 10rem;
 	height: 10rem;
 }
 nav ul {
