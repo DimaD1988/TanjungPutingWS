@@ -30,7 +30,8 @@ nav ul {
 	display: flex;
 	align-items: center;
 }
-nav {
+nav,
+.sticky {
 	height: 12rem;
 }
 nav img {
@@ -63,6 +64,14 @@ nav a,
 }
 #menu {
 	display: none;
+}
+/* //// Sticky Navigation //// */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+	box-shadow: 0 1.2rem 3.2rem var(--primaryShadow);
 }
 /* //// Hero Section //// */
 #sec-hero {

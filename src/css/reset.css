@@ -13,6 +13,7 @@ html {
 @media only screen and (width < 75em) {
 	html {
 		font-size: 56.25%;
+		scroll-behavior: smooth;
 	}
 	html,
 	body {
