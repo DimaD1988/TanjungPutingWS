@@ -14,6 +14,10 @@ html {
 	html {
 		font-size: 56.25%;
 	}
+	html,
+	body {
+		overflow-x: hidden;
+	}
 }
 /* //// less 640px //// */
 @media only screen and (width < 40em) {
@@ -21,8 +25,3 @@ html {
 		font-size: 50%;
 	}
 }
-
-/* html,
-body {
-	overflow-x: hidden;
-} */
