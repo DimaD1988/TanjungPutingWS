@@ -1,4 +1,43 @@
 'use strict';
+/* //// image root Data //// */
+const data = [
+	'1.0',
+	'1.1',
+	'1.2',
+	'1.3',
+	'1.4',
+	'3-2.0',
+	'3-2.1',
+	'3-2.2',
+	'3-2.3',
+	'3-2.4',
+	'3-2.5',
+	'3-2.6',
+	'3-2.7',
+	'3-4.0',
+	'3-4.1',
+	'3-4.2',
+	'3-4.3',
+	'3-4.4',
+	'3-4.5',
+	'3-4.6',
+	'3-4.7',
+	'3-4.8',
+	'3-4.9',
+	'3-4.10',
+	'3-4.11',
+	'3-4.12',
+	'4-3.0',
+	'4-3.1',
+	'4-3.2',
+	'4-3.3',
+	'4-3.4',
+	'4-3.5',
+	'4-3.6',
+	'4-3.7',
+	'4-3.8',
+	'4-3.9',
+];
 /* //// Carousel //// */
 const carousel = function () {
 	// Variables
@@ -20,19 +59,11 @@ const carousel = function () {
 		goToFrame(0);
 	}
 	function prevFrame() {
-		if (curFrame === 0) {
-			curFrame = maxFrame - 1;
-		} else {
-			curFrame--;
-		}
+		curFrame === 0 ? (curFrame = maxFrame - 1) : curFrame--;
 		goToFrame(curFrame);
 	}
 	function nextFrame() {
-		if (curFrame === maxFrame - 1) {
-			curFrame = 0;
-		} else {
-			curFrame++;
-		}
+		curFrame === maxFrame - 1 ? (curFrame = 0) : curFrame++;
 		goToFrame(curFrame);
 	}
 	function lastFrame() {
