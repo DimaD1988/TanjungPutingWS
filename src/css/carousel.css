@@ -3,10 +3,31 @@
 .carousel-btns {
 	margin-bottom: 5rem;
 }
+.carousel,
+.carousel figure {
+	width: 600px;
+	aspect-ratio: 30 / 29;
+}
 .carousel {
-	width: 100%;
-	height: 58rem;
-	background-color: aqua;
+	position: relative;
+	overflow: hidden;
+}
+.carousel figure {
+	background-image: url(../img/frameBody/frameMain.svg);
+	position: absolute;
+	top: 0;
+	transition: transform 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.carousel figure div {
+	width: 90%;
+	aspect-ratio: 1 / 0.78;
+	border-radius: 12px;
+	background-image: url(../img/nature/3-4/3-4.1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 /* //// Carousel Buttons//// */
 .carousel-btns {
@@ -30,4 +51,17 @@
 }
 .carousel-btns img {
 	height: 5rem;
+}
+/* //// less 600px //// */
+@media only screen and (width < 45em) {
+	.carousel,
+	.carousel figure {
+		width: 400px;
+	}
+	.carousel figure {
+		background-image: none;
+	}
+	.carousel figure div {
+		border: 3px solid black;
+	}
 }
