@@ -107,7 +107,7 @@ h1 span {
 /* //// Tour Section //// */
 #sec-tour {
 	height: 92rem;
-	background-image: url(../img/backgroundImg/bgd-1.jpg);
+	background-image: url(../img/backgroundImg/bgd-1.webp);
 	background-position: center;
 }
 #sec-tour .container {
@@ -210,6 +210,10 @@ h1 span {
 	height: 100%;
 	object-fit: cover;
 	display: block;
+	transition: all 0.4s;
+}
+#sec-gallery img:hover {
+	transform: scale(1.1);
 }
 /* //// less 1200px //// */
 @media only screen and (width < 75em) {

@@ -13,6 +13,11 @@ html {
 @media only screen and (width < 75em) {
 	html {
 		font-size: 56.25%;
+		scroll-behavior: smooth;
+	}
+	html,
+	body {
+		overflow-x: hidden;
 	}
 }
 /* //// less 640px //// */
@@ -21,8 +26,3 @@ html {
 		font-size: 50%;
 	}
 }
-
-/* html,
-body {
-	overflow-x: hidden;
-} */

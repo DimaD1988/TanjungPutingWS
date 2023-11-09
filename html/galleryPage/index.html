@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Created for helps you plan and book your dream boat travel and fishing trips. Gallery">
-		<meta name="author" content="Wildlife OrangUtan Borneo Group">
-		<link rel="shortcut icon" type="image/png" href="../../src/img/logo/logo.png" />
+		<meta
+			name="description"
+			content="Created for helps you plan and book your dream boat travel and fishing trips. Gallery"
+		/>
+		<meta name="author" content="Wildlife OrangUtan Borneo Group" />
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="../../src/img/logo/logo.webp"
+		/>
 		<link rel="stylesheet" href="../../src/css/general.css" />
 		<link rel="stylesheet" href="../../src/css/galleryPage.css" />
+		<script src="../../src/js/general.js" defer></script>
 		<title>Wildlife OrangUtan Borneo</title>
 	</head>
 	<body>
@@ -16,30 +24,43 @@
 				<div class="container">
 					<nav>
 						<a href="../homePage/index.html#home">
-							<img src="../../src/img/logo/logo.png" alt="Wildlife orangutan Borneo logo" id="home"></img>
+							<img
+								src="../../src/img/logo/logo.webp"
+								alt="Wildlife orangutan Borneo logo"
+							/>
 						</a>
 						<ul class="nav-list">
 							<li><a href="../homePage/index.html#home">Home</a></li>
 							<li><a href="../homePage/index.html#sec-about">About</a></li>
 							<li><a href="../tourPage/index.html#sec-tourInfo">Tours</a></li>
 							<li><a href="../homePage/index.html#contacts">Contacts</a></li>
+							<li>
+								<div class="language">
+									<span>EN</span>
+								</div>
+							</li>
 						</ul>
-						<div class="language">
-							<span>EN</span>
-						</div>
-						<div class="menu">
-							<span>MENU</span>
-						</div>
+						<figure>
+							<div class="closed"></div>
+							<div class="closed"></div>
+							<div class="closed"></div>
+							<div class="closed"></div>
+						</figure>
 					</nav>
+					<div id="menu">
+						<span>MENU</span>
+					</div>
 				</div>
 			</div>
 		</header>
 		<main>
 			<section id="sec-hero">
 				<div class="container">
-					<h1>Whether you’re <span>looking</span> for<br>
-						a <span>relaxing</span> getaway, you’ve<br>
-						come to the <span>right</span> place</h1>
+					<h1>
+						Whether you’re <span>looking</span> for<br />
+						a <span>relaxing</span> getaway, you’ve<br />
+						come to the <span>right</span> place
+					</h1>
 				</div>
 			</section>
 			<section id="gallery">
@@ -47,11 +68,27 @@
 					<h2 id="carousel">Our Gallery</h2>
 					<div class="carousel"></div>
 					<div class="carousel-btns">
-						<img src="../../src/img/arrows/Arr First.svg" alt="Arrow to first page" id="firstPic">
-						<img src="../../src/img/arrows/Arr left.svg" alt="Arrow to previous page" id="prevPic">
+						<img
+							src="../../src/img/arrows/arrFirst.svg"
+							alt="Arrow to first page"
+							id="firstPic"
+						/>
+						<img
+							src="../../src/img/arrows/arrLeft.svg"
+							alt="Arrow to previous page"
+							id="prevPic"
+						/>
 						<figure id="curPic"><span>Frame 1 -/- From 1</span></figure>
-						<img src="../../src/img/arrows/Arr right.svg" alt="Arrow to next page" id="nextPic">
-						<img src="../../src/img/arrows/Arr Last.svg" alt="Arrow to last page" id="lastPic">
+						<img
+							src="../../src/img/arrows/arrRight.svg"
+							alt="Arrow to next page"
+							id="nextPic"
+						/>
+						<img
+							src="../../src/img/arrows/arrLast.svg"
+							alt="Arrow to last page"
+							id="lastPic"
+						/>
 					</div>
 				</div>
 				<div class="white-line"></div>
@@ -74,10 +111,13 @@
 					<div><a href="mailto:dimdon88@gmail.com">dimdon88@gmail.com</a></div>
 					<span>xxx</span>
 				</div>
-				<img src="../../src/img/logo/logo.png" alt="Wildlife orangutan Borneo logo"></img>
+				<img
+					src="../../src/img/logo/logo.webp"
+					alt="Wildlife orangutan Borneo logo"
+				/>
 			</div>
 		</footer>
+		<script type="module" src="../../src/js/galleryPage.js"></script>
+		<noscript>Your browser does not support JavaScript!</noscript>
 	</body>
-	<script type="module" src="../../src/homePage.js"></script>
-	<noscript>Your browser does not support JavaScript!</noscript>
 </html>

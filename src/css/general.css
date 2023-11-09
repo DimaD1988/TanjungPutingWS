@@ -30,10 +30,12 @@ nav ul {
 	display: flex;
 	align-items: center;
 }
-nav {
+nav,
+.sticky {
 	height: 12rem;
 }
 nav img {
+	width: 10rem;
 	height: 10rem;
 }
 nav ul {
@@ -46,27 +48,35 @@ nav li {
 }
 nav a,
 .language span,
-.menu span {
+#menu span {
 	font-size: 3rem;
 	color: var(--white);
 }
 .language,
-.menu {
+#menu {
 	padding: 1rem 1.4rem;
 	border: solid 2px var(--white);
 	border-radius: 16px;
-	margin-left: 8rem;
+	cursor: pointer;
 }
 .language span {
 	font-weight: 700;
 }
-.menu {
+#menu {
 	display: none;
+}
+/* //// Sticky Navigation //// */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+	box-shadow: 0 1.2rem 3.2rem var(--primaryShadow);
 }
 /* //// Hero Section //// */
 #sec-hero {
 	height: 64.5rem;
-	background-image: url(../img/backgroundImg/hero-1.jpg);
+	background-image: url(../img/backgroundImg/hero-1.webp);
 	background-position: center;
 }
 #sec-hero .container {
@@ -123,17 +133,90 @@ footer img {
 }
 /* //// less 1200px //// */
 @media only screen and (width < 75em) {
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
 	.container {
 		padding: 0 3rem;
 	}
-	.language,
-	.nav-list,
-	footer img {
+	.nav-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
+		z-index: 20;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5rem;
+		opacity: 0;
+		transition: all 0.6s ease-in;
+		pointer-events: none;
+		visibility: hidden;
+	}
+	.nav-open .nav-list {
+		opacity: 100;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0%);
+	}
+	.nav-open#menu {
 		display: none;
 	}
-	.menu {
+	#menu {
 		display: block;
-		margin-left: auto;
+	}
+	header figure {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		z-index: 15;
+		pointer-events: none;
+	}
+	header figure div {
+		width: 25%;
+		background-color: var(--primary);
+		display: none;
+	}
+	.closed {
+		transform: rotateY(0);
+		animation: close 0.4s ease-out alternate forwards;
+	}
+	@keyframes close {
+		to {
+			transform: rotateY(90deg);
+		}
+	}
+	.rotate-active {
+		transform: rotateY(90deg);
+		animation: rotate 0.4s ease-out alternate forwards;
+	}
+	@keyframes rotate {
+		to {
+			transform: rotateY(0);
+		}
+	}
+	header figure :nth-child(1) {
+		animation-delay: 0.4s;
+	}
+	header figure :nth-child(2) {
+		animation-delay: 0.3s;
+	}
+	header figure :nth-child(3) {
+		animation-delay: 0.2s;
+	}
+	header figure :nth-child(4) {
+		animation-delay: 0.1s;
+	}
+	footer img {
+		display: none;
 	}
 	footer .container {
 		justify-content: space-around;
