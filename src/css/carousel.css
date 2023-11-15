@@ -3,10 +3,31 @@
 .carousel-btns {
 	margin-bottom: 5rem;
 }
+.carousel,
+.carousel figure {
+	width: 600px;
+	aspect-ratio: 30 / 29;
+}
 .carousel {
-	width: 100%;
-	height: 58rem;
-	background-color: aqua;
+	position: relative;
+	overflow: hidden;
+}
+.carousel figure {
+	background-image: url(../img/frameBody/frameMain.svg);
+	position: absolute;
+	top: 0;
+	transition: transform 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.carousel figure div {
+	width: 90%;
+	aspect-ratio: 1 / 0.78;
+	border-radius: 12px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 /* //// Carousel Buttons//// */
 .carousel-btns {
@@ -30,4 +51,123 @@
 }
 .carousel-btns img {
 	height: 5rem;
+}
+/* //// less 600px //// */
+@media only screen and (width < 45em) {
+	.carousel,
+	.carousel figure {
+		width: 400px;
+	}
+	.carousel figure {
+		background-image: none;
+	}
+	.carousel figure div {
+		border: 3px solid black;
+	}
+}
+/* //// img info //// */
+#img-1-0 {
+	background-image: url(../img/nature/1-1/1.0.webp);
+}
+#img-1-1 {
+	background-image: url(../img/nature/1-1/1.1.webp);
+}
+#img-1-2 {
+	background-image: url(../img/nature/1-1/1.2.webp);
+}
+#img-1-3 {
+	background-image: url(../img/nature/1-1/1.3.webp);
+}
+#img-1-4 {
+	background-image: url(../img/nature/1-1/1.4.webp);
+}
+#img-3-2-0 {
+	background-image: url(../img/nature/3-2/3-2.0.webp);
+}
+#img-3-2-1 {
+	background-image: url(../img/nature/3-2/3-2.1.webp);
+}
+#img-3-2-2 {
+	background-image: url(../img/nature/3-2/3-2.2.webp);
+}
+#img-3-2-3 {
+	background-image: url(../img/nature/3-2/3-2.3.webp);
+}
+#img-3-2-4 {
+	background-image: url(../img/nature/3-2/3-2.4.webp);
+}
+#img-3-2-5 {
+	background-image: url(../img/nature/3-2/3-2.5.webp);
+}
+#img-3-2-6 {
+	background-image: url(../img/nature/3-2/3-2.6.webp);
+}
+#img-3-2-7 {
+	background-image: url(../img/nature/3-2/3-2.7.webp);
+}
+#img-3-4-1 {
+	background-image: url(../img/nature/3-4/3-4.1.webp);
+}
+#img-3-4-2 {
+	background-image: url(../img/nature/3-4/3-4.2.webp);
+}
+#img-3-4-3 {
+	background-image: url(../img/nature/3-4/3-4.3.webp);
+}
+#img-3-4-4 {
+	background-image: url(../img/nature/3-4/3-4.4.webp);
+}
+#img-3-4-5 {
+	background-image: url(../img/nature/3-4/3-4.5.webp);
+}
+#img-3-4-6 {
+	background-image: url(../img/nature/3-4/3-4.6.webp);
+}
+#img-3-4-7 {
+	background-image: url(../img/nature/3-4/3-4.7.webp);
+}
+#img-3-4-8 {
+	background-image: url(../img/nature/3-4/3-4.8.webp);
+}
+#img-3-4-9 {
+	background-image: url(../img/nature/3-4/3-4.9.webp);
+}
+#img-3-4-10 {
+	background-image: url(../img/nature/3-4/3-4.10.webp);
+}
+#img-3-4-11 {
+	background-image: url(../img/nature/3-4/3-4.11.webp);
+}
+#img-3-4-12 {
+	background-image: url(../img/nature/3-4/3-4.12.webp);
+}
+#img-4-3-0 {
+	background-image: url(../img/nature/4-3/4-3.0.webp);
+}
+#img-4-3-1 {
+	background-image: url(../img/nature/4-3/4-3.1.webp);
+}
+#img-4-3-2 {
+	background-image: url(../img/nature/4-3/4-3.2.webp);
+}
+#img-4-3-3 {
+	background-image: url(../img/nature/4-3/4-3.3.webp);
+}
+#img-4-3-4 {
+	background-image: url(../img/nature/4-3/4-3.4.webp);
+}
+#img-4-3-5 {
+	background-image: url(../img/nature/4-3/4-3.5.webp);
+}
+#img-4-3-6 {
+	background-image: url(../img/nature/4-3/4-3.6.webp);
+}
+#img-4-3-7 {
+	background-image: url(../img/nature/4-3/4-3.7.webp);
+}
+#img-4-3-8 {
+	background-image: url(../img/nature/4-3/4-3.8.webp);
+}
+#img-4-3-9 {
+	background-image: url(../img/nature/4-3/4-3.9.webp);
 }
