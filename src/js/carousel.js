@@ -44,11 +44,11 @@ const carousel = function () {
 	const frames = document.querySelectorAll('.carousel figure');
 	const btnFirst = document.getElementById('firstPic');
 	const btnLeft = document.getElementById('prevPic');
+	const infoTab = document.querySelector(`#curPic span`);
 	const btnRight = document.getElementById('nextPic');
 	const btnLast = document.getElementById('lastPic');
 	const maxFrame = frames.length;
 	let curFrame = 0;
-	console.log(maxFrame);
 	// Functions
 	const goToFrame = function (frame) {
 		frames.forEach(
@@ -57,22 +57,30 @@ const carousel = function () {
 	};
 	function firstFrame() {
 		goToFrame(0);
+		curPosition(curFrame + 1, maxFrame);
 	}
 	function prevFrame() {
 		curFrame === 0 ? (curFrame = maxFrame - 1) : curFrame--;
 		goToFrame(curFrame);
+		curPosition(curFrame + 1, maxFrame);
 	}
 	function nextFrame() {
 		curFrame === maxFrame - 1 ? (curFrame = 0) : curFrame++;
 		goToFrame(curFrame);
+		curPosition(curFrame + 1, maxFrame);
 	}
 	function lastFrame() {
 		goToFrame(maxFrame - 1);
+		curPosition(curFrame + 1, maxFrame);
 	}
 	const init = function () {
 		goToFrame(0);
+		curPosition(curFrame + 1, maxFrame);
 	};
 	init();
+	function curPosition(cur, tot) {
+		infoTab.textContent = `Frame ${cur} / From ${tot}`;
+	}
 	// Event Handlers
 	btnFirst.addEventListener(`click`, firstFrame);
 	btnLeft.addEventListener(`click`, prevFrame);
