@@ -25,6 +25,7 @@
 	width: 90%;
 	aspect-ratio: 1 / 0.78;
 	border-radius: 12px;
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
