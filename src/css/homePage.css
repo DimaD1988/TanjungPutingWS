@@ -40,26 +40,31 @@ h1 span {
 	clip-path: polygon(0 18rem, 160rem 0, 160rem 22rem, 0 40rem);
 }
 /* //// About Section //// */
-#sec-about {
+#sec-about,
+#sec-aboutId {
 	position: relative;
 	margin-top: -1rem;
 }
-#sec-about .container {
+#sec-about .container,
+#sec-aboutId .container {
 	display: flex;
 	align-items: center;
 	height: 94rem;
 }
-#sec-about .text-box {
+#sec-about .text-box,
+#sec-aboutId .text-box {
 	max-width: 56rem;
 }
-#sec-about p {
+#sec-about p,
+#sec-aboutId p {
 	margin-top: 1.5rem;
 	font-size: 2.4rem;
 	font-weight: 300;
 	letter-spacing: 2px;
 	line-height: 1.3;
 }
-#sec-about img {
+#sec-about img,
+#sec-aboutId img {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -225,15 +230,18 @@ h1 span {
 		width: clamp(30rem, 44.4vw, 55.3rem);
 		font-size: clamp(2rem, 2.4vw, 3rem);
 	}
-	#sec-about {
+	#sec-about,
+	#sec-aboutId {
 		margin-top: 12rem;
 	}
-	#sec-about .container {
+	#sec-about .container,
+	#sec-aboutId .container {
 		margin-top: 1rem;
 		justify-content: center;
 		height: auto;
 	}
-	#sec-about img {
+	#sec-about img,
+	#sec-aboutId img {
 		display: none;
 	}
 	#sec-benefits .text-block {
@@ -276,13 +284,16 @@ h1 span {
 		bottom: -30rem;
 		clip-path: polygon(0 18rem, 160rem 0, 160rem 12rem, 0 30rem);
 	}
-	#sec-about .container {
+	#sec-about .container,
+	#sec-aboutId .container {
 		height: auto;
 	}
-	#sec-about .text-box {
+	#sec-about .text-box,
+	#sec-aboutId .text-box {
 		max-width: auto;
 	}
-	#sec-about p {
+	#sec-about p,
+	#sec-aboutId p {
 		margin: 1rem 0rem;
 		letter-spacing: clamp(0px, 0.3vw, 2px);
 		text-align: justify;

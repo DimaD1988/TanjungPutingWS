@@ -10,12 +10,14 @@ h1 span {
 	letter-spacing: 0.2rem;
 }
 /* //// TourInfo Section //// */
-#sec-tourInfo .container {
+#sec-tourInfo .container,
+#sec-tourInfoId .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-#sec-tourInfo h2 {
+#sec-tourInfo h2,
+#sec-tourInfoId h2 {
 	font-size: 4.5rem;
 	margin-bottom: 2rem;
 }
@@ -190,7 +192,8 @@ h1 span {
 	h1 span {
 		font-size: clamp(3.6rem, 3.6vw, 4.5rem);
 	}
-	#sec-tourInfo {
+	#sec-tourInfo,
+	#sec-tourInfoId {
 		margin: -4rem auto 4rem;
 	}
 	.btn-left,
@@ -209,10 +212,12 @@ h1 span {
 	#sec-hero {
 		height: 40rem;
 	}
-	#sec-tourInfo {
+	#sec-tourInfo,
+	#sec-tourInfoId {
 		margin: -6rem auto 3rem;
 	}
-	#sec-tourInfo h2 {
+	#sec-tourInfo h2,
+	#sec-tourInfoId h2 {
 		font-size: clamp(3.6rem, 4.6vw, 4.5rem);
 	}
 	.page-btn-box {
