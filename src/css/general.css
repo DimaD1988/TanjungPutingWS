@@ -24,6 +24,9 @@ section,
 a {
 	text-decoration: none;
 }
+.none {
+	display: none;
+}
 /* //// Navigation //// */
 nav,
 nav ul {

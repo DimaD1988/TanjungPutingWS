@@ -60,9 +60,6 @@ h1 span {
 .btn-right {
 	right: -9rem;
 }
-.dots figure {
-	background-color: var(--primaryShadow);
-}
 /* //// DayBlock //// */
 .day-block {
 	max-width: 80rem;

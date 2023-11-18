@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="../../src/css/general.css" />
 		<link rel="stylesheet" href="../../src/css/tourPage.css" />
 		<script src="../../src/js/general.js" defer></script>
+		<script src="../../src/js/pagination.js" defer></script>
 		<title>Wildlife OrangUtan Borneo</title>
 	</head>
 	<body>
@@ -34,11 +35,13 @@
 							<li><a href="../homePage/index.html#sec-about">About</a></li>
 							<li><a href="../galleryPage/index.html#carousel">Gallery</a></li>
 							<li><a href="../homePage/index.html#contacts">Contacts</a></li>
-							<li><a href="../tourPageId/index.html">
-								<div class="language">
-									<span>ID</span>
-								</div>
-							</a></li>
+							<li>
+								<a href="../tourPageId/index.html">
+									<div class="language">
+										<span>ID</span>
+									</div>
+								</a>
+							</li>
 						</ul>
 						<figure>
 							<div class="closed"></div>
@@ -72,25 +75,22 @@
 								src="../../src/img/arrows/arrLeft.svg"
 								alt="Arrow to previous tour"
 								class="btn-left"
+								width="40"
+								height="71"
 							/>
-							<div id="btn-prev"><span>2D / 1N</span></div>
+							<div id="btn-prev"><span>5D / 4N</span></div>
 							<div id="btn-cur"><span>3 Days / 2 Nights Tour</span></div>
 							<div id="btn-next"><span>4D / 3N</span></div>
 							<img
 								src="../../src/img/arrows/arrRight.svg"
 								alt="Arrow to next tour"
 								class="btn-right"
+								width="40"
+								height="71"
 							/>
-							<div class="dots">
-								<figure id="dot-1"></figure>
-								<figure id="dot-2"></figure>
-								<figure id="dot-3"></figure>
-								<figure id="dot-4"></figure>
-								<figure id="dot-5"></figure>
-							</div>
 						</div>
 					</div>
-					<div class="day-block">
+					<div class="day-block t3D2N">
 						<figure>
 							<h3>Day 1</h3>
 							<h4>Pangkalan Bun – Kumai – Tanjung Harapan</h4>
@@ -119,12 +119,12 @@
 								</li>
 								<li>Dinner and spend the night on the boat (Klotok)</li>
 								<li>
-									he guide akan membawa Kapal sedikit jauh agar kita bisa
-									menikmati suasana bermalam di alam liar sepenuhnya
+									The guide will bring the boat little far so we can enjoy night
+									view
 								</li>
 								<li>
-									Kalian juga bisa menemukan Galaksi Milky Way jika langit malam
-									cerah, pemandangan yang sulit kita temukan di perkotaan
+									You can also find Milky Way Galaxy when the sky is clear, it’s
+									a rare view that we can find in the city
 								</li>
 							</ul>
 						</figure>
@@ -132,48 +132,289 @@
 							<h3>Day 2</h3>
 							<h4>Pondok Tanggui – Camp Leaky</h4>
 							<ul>
-								<li>Sarapan pagi</li>
+								<li>Breakfast</li>
+								<li>Going to Pondok Tanggui to watch feeding time at 9 am</li>
 								<li>
-									Menuju Pondok Tanggui untuk melihat feeding time sekitar jam 9
-									pagi
+									Short trekking in Pondok Tanggui while going back to the boat
 								</li>
-								<li>Trekking pendek di hutan area</li>
-								<li>Pondok Tanggui sembari Kembali ke Kapal</li>
-								<li>Menuju Camp Leakey (± 2 jam)</li>
-								<li>Makan siang</li>
+								<li>Going to Camp Leakey (± 2 hours)</li>
+								<li>Lunch</li>
 								<li>
-									Menuju lokasi feeding di Camp Leakey untuk melihat feeding
-									time di jam 2 siang
+									Going to feeding location in Camp Leakey to watch feeding time
+									at 2 pm
 								</li>
 								<li>
-									Kembali ke Kapal dan menuju lokasi untuk tempat istirahat
-									malam sembari melihat aktivitas Bekantan, Monyet ekor panjang,
-									kingfisher dan satwa lainnya yang mungkin bisa anda temukan di
-									sepanjang Sungai dan jika anda beruntung anda bisa melihat
-									buaya di habitat aslinya
+									Back to the boat and going to the location where we will stay
+									for night’s rest. On the way to the location we will see some
+									wild animals activity along the river such as Bekantan, Long
+									Tailed Macaque, Kingfisher, and another animals that can be
+									found along the river. If you lucky, you may see crocodile in
+									their native habitat.
 								</li>
 								<li>
-									Makan malam dan bermalam di atas kapal di area sekitar hutan
-									Nipah
-								</li>
-								<li>
-									Disini kalian bisa melihat kumpulan kunang – kunang di pohon
-									Nipah yang sangat indah
+									Dinner and spend the night on the boat near Nipa Palm forest
+									and you will see lot of fireflies flying or perch on the Nipa
+									leaves. What a beautiful view to see.
 								</li>
 							</ul>
 						</figure>
 						<figure>
 							<h3>Day 3</h3>
-							<h4>Tour selesai</h4>
+							<h4>End of Tour</h4>
 							<ul>
-								<li>Sarapan pagi</li>
-								<li>Menikmati keindahan alam Sungai Sekonyer</li>
-								<li>Menuju Dermaga Kumai</li>
+								<li>Breakfast</li>
+								<li>Enjoying the beauty of Sekonyer River from the boat</li>
+								<li>Going back to Pier Kumai</li>
 								<li>
-									Transfer Bandara Pangkalan Bun atau Hotel jika anda masih
-									memiliki agenda di kota Pangkalan Bun
+									Transfer to Pangkalan Bun Airport or Hotel if you still have
+									other plans in Pangkalan Bun city
 								</li>
-								<li>Tour selesai</li>
+								<li>Tour finished</li>
+							</ul>
+						</figure>
+					</div>
+					<div class="day-block t4D3N none">
+						<figure>
+							<h3>Day 1</h3>
+							<h4>Pangkalan Bun – Kumai – Tanjung Harapan</h4>
+							<ul>
+								<li>Meeting point at Pangkalan Bun Airport</li>
+								<li>Going to Kumai Pier by taxi (± 30 minutes)</li>
+								<li>
+									From Kumai Pier head to Tanjung Harapan Tanjung Puting
+									National Park by River Cruise (Klotok)
+								</li>
+								<li>
+									During the trip from Pier to Tanjung Harapan you will see
+									scenery such as Mangrove Forest, Nipa Palm, and wild life
+									along the Skonyer River
+								</li>
+								<li>Lunch on the River Cruise</li>
+								<li>Going to feeding point in Tanjung Harapan</li>
+								<li>Watching feeding time at 3 PM</li>
+								<li>
+									Going back to the boat, take a rest and enjoying the view from
+									the boat
+								</li>
+								<li>
+									Night Trekking with rangers and guide to see wild animals that
+									are active at night
+								</li>
+								<li>Dinner and spend the night on the boat (Klotok)</li>
+								<li>
+									The guide will bring the boat little far so we can enjoy night
+									view
+								</li>
+								<li>
+									You can also find Milky Way Galaxy when the sky is clear, it’s
+									a rare view that we can find in the city
+								</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 2</h3>
+							<h4>Camp Leaky – Night Trekking</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>
+									Going to Camp Leakey meanwhile explore and enjoy the view
+									around Sekonyer River
+								</li>
+								<li>Lunch on the boat</li>
+								<li>
+									Going to feeding location in Camp Leakey to watch feeding time
+									at 2 pm
+								</li>
+								<li>
+									Back to the boat for resting and continue towards to Pondok
+									Tanggui
+								</li>
+								<li>Resting on the boat until dinner time</li>
+								<li>
+									Dinner and after it preparing for Night Trekking while we
+									waiting the ranger who will lead us for Night Trekking
+								</li>
+								<li>
+									Night Trekking with ranger and guide to see native animals of
+									Tanjung Putting at night and if you lucky you can see
+									Kalimantan Leopard (Neofelis diardi ). This animal is said to
+									be almost like an illusion, because very few people have the
+									opportunity to witness it directly, or you maybe you can meet
+									Tarsius, small monkey with big eyes
+								</li>
+								<li>Back to the boat and resting</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 3</h3>
+							<h4>Pondok Tanggui – Tanjung Harapan Village</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>Going to feeding location at Pondok Tanggui</li>
+								<li>Watching feeding time at 9 PM</li>
+								<li>Going back to the boat and resting</li>
+								<li>Lunch</li>
+								<li>
+									Evening Trekking in Pondok Tanggui forest with ranger and
+									guide
+								</li>
+								<li>
+									Going back to the boat and continue to tanjung Harapan Village
+								</li>
+								<li>
+									In Tanjung Harapan Village we can see daily activities of
+									local people who live near Tanjung Putting National Park
+								</li>
+								<li>Going back to the boat and waiting for dinner time</li>
+								<li>Dinner</li>
+								<li>
+									Going to area of Nipa Palm forest and spend the night on the
+									boat near Nipa Palm forest and you will see lot of fireflies
+									flying or perch on the Nipa leaves. What a beautiful view to
+									see
+								</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 4</h3>
+							<h4>End of Tour</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>Enjoying the beauty of Sekonyer River from the boat</li>
+								<li>Going back to Pier Kumai</li>
+								<li>
+									Transfer to Pangkalan Bun Airport or Hotel if you still have
+									other plans in Pangkalan Bun city
+								</li>
+								<li>Tour finished</li>
+							</ul>
+						</figure>
+					</div>
+					<div class="day-block t5D4N none">
+						<figure>
+							<h3>Day 1</h3>
+							<h4>Pangkalan Bun – Kumai – Tanjung Harapan</h4>
+							<ul>
+								<li>Meeting point at Pangkalan Bun Airport</li>
+								<li>Going to Kumai Pier by taxi (± 30 minutes)</li>
+								<li>
+									From Kumai Pier head to Tanjung Harapan Tanjung Puting
+									National Park by River Cruise (Klotok)
+								</li>
+								<li>
+									During the trip from Pier to Tanjung Harapan you will see
+									scenery such as Mangrove Forest, Nipa Palm, and wild life
+									along the Skonyer River
+								</li>
+								<li>Lunch on the River Cruise</li>
+								<li>Going to feeding point in Tanjung Harapan</li>
+								<li>Watching feeding time at 3 PM</li>
+								<li>
+									Going back to the boat, take a rest and enjoying the view from
+									the boat
+								</li>
+								<li>
+									Night Trekking with rangers and guide to see wild animals that
+									are active at night
+								</li>
+								<li>Dinner and spend the night on the boat (Klotok)</li>
+								<li>
+									The guide will bring the boat little far so we can enjoy night
+									view
+								</li>
+								<li>
+									You can also find Milky Way Galaxy when the sky is clear, it’s
+									a rare view that we can find in the city
+								</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 2</h3>
+							<h4>Camp Leaky – Night Trekking</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>
+									Going to Camp Leakey meanwhile explore and enjoy the view
+									around Sekonyer River
+								</li>
+								<li>Lunch on the boat</li>
+								<li>
+									Going to feeding location in Camp Leakey to watch feeding time
+									at 2 pm
+								</li>
+								<li>
+									Back to the boat for resting and continue towards to Pondok
+									Tanggui
+								</li>
+								<li>Resting on the boat until dinner time</li>
+								<li>
+									Dinner and after it preparing for Night Trekking while we
+									waiting the ranger who will lead us for Night Trekking
+								</li>
+								<li>
+									Night Trekking with ranger and guide to see native animals of
+									Tanjung Putting at night and if you lucky you can see
+									Kalimantan Leopard (Neofelis diardi ). This animal is said to
+									be almost like an illusion, because very few people have the
+									opportunity to witness it directly, or you maybe you can meet
+									Tarsius, small monkey with big eyes
+								</li>
+								<li>Back to the boat and resting</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 3</h3>
+							<h4>Pondok Tanggui – Tanjung Harapan Village</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>Going to feeding location at Pondok Tanggui</li>
+								<li>Watching feeding time at 9 PM</li>
+								<li>Going back to the boat and resting</li>
+								<li>Lunch</li>
+								<li>
+									Evening Trekking in Pondok Tanggui forest with ranger and
+									guide
+								</li>
+								<li>
+									Going back to the boat and continue to tanjung Harapan Village
+								</li>
+								<li>
+									In Tanjung Harapan Village we can see daily activities of
+									local people who live near Tanjung Putting National Park
+								</li>
+								<li>Going back to the boat and waiting for dinner time</li>
+								<li>Dinner</li>
+								<li>
+									Going to area of Nipa Palm forest and spend the night on the
+									boat near Nipa Palm forest and you will see lot of fireflies
+									flying or perch on the Nipa leaves. What a beautiful view to
+									see
+								</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 4</h3>
+							<h4>Fishing's day</h4>
+							<ul>
+								<li>Breakfast, Lunch and Dinner</li>
+								<li>
+									Full day fishing activities and enjoying the view around the
+									boat
+								</li>
+							</ul>
+						</figure>
+						<figure>
+							<h3>Day 5</h3>
+							<h4>End of Tour</h4>
+							<ul>
+								<li>Breakfast</li>
+								<li>Enjoying the beauty of Sekonyer River from the boat</li>
+								<li>Going back to Pier Kumai</li>
+								<li>
+									Transfer to Pangkalan Bun Airport or Hotel if you still have
+									other plans in Pangkalan Bun city
+								</li>
+								<li>Tour finished</li>
 							</ul>
 						</figure>
 					</div>
@@ -190,55 +431,57 @@
 					<figure id="note">
 						<ul>
 							<li>
-								Untuk aktivitas memancing akan disesuaikan dengan jadwal
-								kedatangan tamu, bisa di letakan hari pertama atau hari terakhir
+								For fishing activity will be managed by the arrival time of the
+								guest, it can be placed on first day or last day
 							</li>
 							<li>
-								Jika anda menginginkan kegiatan lain selain memancing pada paket
-								5D4N, harap hubungi kami untuk kesepakatan lanjutan
-							</li>
-							<li>
-								Untuk jam trekking malam, bisa sebelum makan malam atau sesudah
-								makan malam, guide akan menyesuaikan waktu dan kondisi di
-								lapangan
+								Our guide will manage the schedule of fishing activity, so other
+								activities will not be disrupted
 							</li>
 						</ul>
 						<ul>
 							<li>
-								Guide kami akan menyesuaikan jadwal untuk aktivitas memancing
-								sehingga aktivitas lain tidak akan terganggu sehingga seluruh
-								rangkaian acara bisa terlaksana dengan baik
+								If you want another activities beside fishing or if you want to
+								have fishing activity on another package, please contact us for
+								another deals
 							</li>
 							<li>
-								Jika anda menginginkan aktivitas memancing di paket selain 5D4N
-								harap menghubungi kami untuk kesepakatan lanjutan
+								The schedule for Night Trekking can be placed before dinner or
+								after dinner. Our guide will manage the time by the situation
+								and condition in that time
 							</li>
 						</ul>
 					</figure>
 					<hr />
 					<figure id="includes">
 						<div>
-							<h3>Harga termasuk :</h3>
+							<h3>Price Included :</h3>
 							<ul>
-								<li>Transfer dari dan ke Bandara Pangkalan Bun</li>
-								<li>Mobil Taxi</li>
-								<li>Klotok</li>
+								<li>Transfer in and out from and to Pangkalan Bun airport</li>
+								<li>Taxi</li>
+								<li>Klotok (boat)</li>
 								<li>Tour guide</li>
-								<li>Semua biaya akomodasi</li>
-								<li>Makan pagi, siang, dan malam</li>
-								<li>Soft drink dan camilan</li>
-								<li>Kopi, the, air mineral kemasan, dan minuman soda</li>
+								<li>All accommodation</li>
+								<li>Breakfast, Lunch and Dinner</li>
+								<li>Soft drink and snack</li>
+								<li>Coffe, tea, mineral water, and soda water</li>
 								<li>
-									Donasi rangger, ijin masuk dan ijin penggunaan kamera lensa
+									Donation for rangers, entrance permit and permission for lens
+									camera
 								</li>
+								<li>English speaking guide</li>
 							</ul>
 						</div>
 						<div>
-							<h3>Tidak termasuk dalam paket :</h3>
+							<h3>Not included :</h3>
 							<ul>
-								<li>Pengeluaran pribadi selama tour</li>
-								<li>Tiket penerbangan</li>
-								<li>Tipping untuk guide dan kru kapal</li>
+								<li>
+									Personal expenses during the tour (Tipping for guide and crew)
+								</li>
+								<li>Flight ticket</li>
+								<li>Personal insurance</li>
+								<li>Tipping for guide and boat crew</li>
+								<li>Alcoholic beverage</li>
 							</ul>
 						</div>
 					</figure>

@@ -57,7 +57,7 @@ const carousel = function () {
 	};
 	function firstFrame() {
 		goToFrame(0);
-		curPosition(curFrame + 1, maxFrame);
+		curPosition(1, maxFrame);
 	}
 	function prevFrame() {
 		curFrame === 0 ? (curFrame = maxFrame - 1) : curFrame--;
@@ -71,7 +71,7 @@ const carousel = function () {
 	}
 	function lastFrame() {
 		goToFrame(maxFrame - 1);
-		curPosition(curFrame + 1, maxFrame);
+		curPosition(maxFrame, maxFrame);
 	}
 	const init = function () {
 		goToFrame(0);
