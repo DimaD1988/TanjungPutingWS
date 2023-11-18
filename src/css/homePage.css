@@ -168,7 +168,10 @@ h1 span {
 	height: 72rem;
 	width: 36rem;
 	padding: 4.2rem;
-	background-color: darkkhaki;
+	background-image: url(../img/backgroundImg/fisher-1.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 4.2rem;
 }
 .page-img-box .btn,
@@ -180,6 +183,9 @@ h1 span {
 	height: 6.4rem;
 	border: solid 2px var(--primaryShadow);
 	border-radius: 4.2rem;
+}
+.page-img-box .btn {
+	background-color: var(--white);
 }
 .btnAlt {
 	display: none;
@@ -198,9 +204,6 @@ h1 span {
 }
 .btn-right {
 	right: -6.4rem;
-}
-.dots figure {
-	background-color: var(--white);
 }
 /* //// Gallery Section //// */
 #sec-gallery .border {
@@ -337,9 +340,6 @@ h1 span {
 	}
 	.btn-right {
 		right: 10%;
-	}
-	.dots {
-		bottom: -12rem;
 	}
 	.btnAlt {
 		margin: 10rem auto 2rem auto;
