@@ -26,6 +26,7 @@ h1 span {
 	display: flex;
 	justify-content: space-between;
 	gap: 4rem;
+	margin-bottom: 9rem;
 }
 .page-btn-box span {
 	font-size: 3rem;
@@ -63,7 +64,7 @@ h1 span {
 /* //// DayBlock //// */
 .day-block {
 	max-width: 80rem;
-	margin-top: 9rem;
+	margin-bottom: 4rem;
 }
 .day-block figure {
 	margin-bottom: 4rem;
@@ -101,9 +102,25 @@ h1 span {
 }
 /* //// Brink Button //// */
 .rules-block {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+.term-payment {
+	padding: 2rem;
+	border: 2px solid var(--primaryShadow);
+	border-radius: 2.7rem;
+}
+.term-payment p {
+	margin: 2rem 0;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	line-height: 160%;
+}
+.term-payment span {
+	font-weight: 700;
+	border: 2px solid var(--primaryShadow);
 }
 .brink-pos {
 	display: flex;
@@ -129,6 +146,11 @@ h1 span {
 	line-height: 0;
 	color: var(--white);
 	margin: 0 auto;
+}
+.active {
+	border: 2px solid var(--white);
+	box-shadow: 2px 2px var(--primary), -2px 2px var(--primary),
+		2px -2px var(--primary), -2px -2px var(--primary);
 }
 /* //// Note Section //// */
 #sec-note {
