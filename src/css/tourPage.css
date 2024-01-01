@@ -100,6 +100,19 @@ h1 span {
 	background-color: var(--primaryShadow);
 }
 /* //// Brink Button //// */
+.rules-block {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.brink-pos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 2rem;
+	border: 2px solid var(--primaryShadow);
+	border-radius: 2.7rem;
+}
 .brink-btn {
 	display: grid;
 	place-content: center;
