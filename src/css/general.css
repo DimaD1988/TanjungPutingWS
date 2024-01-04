@@ -27,6 +27,11 @@ a {
 .none {
 	display: none;
 }
+.active {
+	border: 2px solid var(--white);
+	box-shadow: 2px 2px var(--primary), -2px 2px var(--primary),
+		2px -2px var(--primary), -2px -2px var(--primary);
+}
 /* //// Navigation //// */
 nav,
 nav ul {
