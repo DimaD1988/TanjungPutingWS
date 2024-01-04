@@ -32,6 +32,26 @@ a {
 	box-shadow: 2px 2px var(--primary), -2px 2px var(--primary),
 		2px -2px var(--primary), -2px -2px var(--primary);
 }
+.activeBtn {
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:active {
+		transform: scale(0.8);
+	}
+}
+.activeBtnBig {
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		transform: scale(1.05);
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
 /* //// Navigation //// */
 nav,
 nav ul {
