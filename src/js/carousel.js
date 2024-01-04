@@ -56,6 +56,7 @@ const carousel = function () {
 		);
 	};
 	function firstFrame() {
+		curFrame = 0;
 		goToFrame(0);
 		curPosition(1, maxFrame);
 	}
@@ -70,6 +71,7 @@ const carousel = function () {
 		curPosition(curFrame + 1, maxFrame);
 	}
 	function lastFrame() {
+		curFrame = maxFrame - 1;
 		goToFrame(maxFrame - 1);
 		curPosition(maxFrame, maxFrame);
 	}

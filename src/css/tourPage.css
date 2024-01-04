@@ -139,6 +139,7 @@ h1 span {
 	border-radius: 2.7rem;
 	background-color: var(--primary);
 	margin-bottom: 2rem;
+	cursor: pointer;
 }
 .brink-btn span {
 	font-size: 3rem;
@@ -146,11 +147,6 @@ h1 span {
 	line-height: 0;
 	color: var(--white);
 	margin: 0 auto;
-}
-.active {
-	border: 2px solid var(--white);
-	box-shadow: 2px 2px var(--primary), -2px 2px var(--primary),
-		2px -2px var(--primary), -2px -2px var(--primary);
 }
 /* //// Note Section //// */
 #sec-note {
