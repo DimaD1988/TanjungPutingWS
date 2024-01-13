@@ -41,22 +41,26 @@ h1 span {
 }
 /* //// About Section //// */
 #sec-about,
-#sec-aboutId {
+#sec-aboutId,
+#sec-aboutRu {
 	position: relative;
 	margin-top: -1rem;
 }
 #sec-about .container,
-#sec-aboutId .container {
+#sec-aboutId .container,
+#sec-aboutRu .container {
 	display: flex;
 	align-items: center;
 	height: 94rem;
 }
 #sec-about .text-box,
-#sec-aboutId .text-box {
+#sec-aboutId .text-box,
+#sec-aboutRu .text-box {
 	max-width: 56rem;
 }
 #sec-about p,
-#sec-aboutId p {
+#sec-aboutId p,
+#sec-aboutRu p {
 	margin-top: 1.5rem;
 	font-size: 2.4rem;
 	font-weight: 300;
@@ -64,7 +68,8 @@ h1 span {
 	line-height: 1.3;
 }
 #sec-about img,
-#sec-aboutId img {
+#sec-aboutId img,
+#sec-aboutRu img {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -168,11 +173,19 @@ h1 span {
 	height: 72rem;
 	width: 36rem;
 	padding: 4.2rem;
-	background-image: url(../img/backgroundImg/fisher-1.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 4.2rem;
+}
+.page-img-box.d3n2 {
+	background-image: url(../img/nature/3-4/3-4.3.webp);
+}
+.page-img-box.d4n3 {
+	background-image: url(../img/nature/3-4/3-4.8.webp);
+}
+.page-img-box.d5n4 {
+	background-image: url(../img/backgroundImg/fisher-1.webp);
 }
 .page-img-box .btn,
 .btnAlt {
@@ -233,17 +246,20 @@ h1 span {
 		font-size: clamp(2rem, 2.4vw, 3rem);
 	}
 	#sec-about,
-	#sec-aboutId {
+	#sec-aboutId,
+	#sec-aboutRu {
 		margin-top: 12rem;
 	}
 	#sec-about .container,
-	#sec-aboutId .container {
+	#sec-aboutId .container,
+	#sec-aboutRu .container {
 		margin-top: 1rem;
 		justify-content: center;
 		height: auto;
 	}
 	#sec-about img,
-	#sec-aboutId img {
+	#sec-aboutId img,
+	#sec-aboutRu img {
 		display: none;
 	}
 	#sec-benefits .text-block {
@@ -287,15 +303,18 @@ h1 span {
 		clip-path: polygon(0 18rem, 160rem 0, 160rem 12rem, 0 30rem);
 	}
 	#sec-about .container,
-	#sec-aboutId .container {
+	#sec-aboutId .container,
+	#sec-aboutRu .container {
 		height: auto;
 	}
 	#sec-about .text-box,
-	#sec-aboutId .text-box {
+	#sec-aboutId .text-box,
+	#sec-aboutRu .text-box {
 		max-width: auto;
 	}
 	#sec-about p,
-	#sec-aboutId p {
+	#sec-aboutId p,
+	#sec-aboutRu p {
 		margin: 1rem 0rem;
 		letter-spacing: clamp(0px, 0.3vw, 2px);
 		text-align: justify;
