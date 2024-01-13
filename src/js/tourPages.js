@@ -12,8 +12,10 @@ function tourPages() {
 		tourDaysSelector.forEach((tour, i) => {
 			if (curTour !== i) {
 				document.querySelector(`${tour}`).classList.add('none');
+				document.querySelector('.page-img-box').classList.remove(tour.slice(1));
 			} else {
 				document.querySelector(`${tour}`).classList.remove('none');
+				document.querySelector('.page-img-box').classList.add(tour.slice(1));
 			}
 		});
 	}
