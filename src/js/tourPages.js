@@ -2,7 +2,7 @@
 /* //// Tour Pages //// */
 function tourPages() {
 	// Variables
-	const tourDaysSelector = ['.d1', '.d3n2', '.d4n3', '.d5n4'];
+	const tourDaysSelector = ['.d3n2', '.d4n3', '.d5n4'];
 	const leftBtn = document.querySelector('.btn-left');
 	const rightBtn = document.querySelector('.btn-right');
 	let tourPage = 0;
