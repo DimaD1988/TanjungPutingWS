@@ -52,6 +52,24 @@ a {
 		transform: scale(0.95);
 	}
 }
+/* //// Social Links //// */
+.social-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2.4rem;
+	margin-left: 3rem;
+}
+.social-links a {
+	height: 3rem;
+	width: 3rem;
+	background-color: var(--white);
+	border-radius: 50%;
+}
+.social-links img {
+	height: 3rem;
+	width: 3rem;
+}
 /* //// Navigation //// */
 nav,
 nav ul {
